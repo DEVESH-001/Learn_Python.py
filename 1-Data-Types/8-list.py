@@ -34,6 +34,25 @@ print(f"Max Coffee Level: {max_level}, Min Coffee Level: {min_level}")
 
 
 
-# # Slicing: Extracting a sublist
-# selected_spices = spice_options[1:3] # Extracting "cardamom"
-# print(f"Selected Spices: {selected_spices}")
+# Operator Overloading : it is designed to do more than one task based on the context.
+# Lists support operator overloading for operations like concatenation (+) and repetition (*).
+
+base_liquids = ["water", "milk"]
+flavorings = ["vanilla", "coffee"]
+
+full_liquid_mix = base_liquids + flavorings  
+print(f"Full Liquid Mix : {full_liquid_mix}") # Concatenates two lists
+
+strong_coffee = ["coffee"] * 3
+print(f"Strong Coffee Mix : {strong_coffee}") # Repeats "coffee" three times in the list
+
+
+# Bytearray :return a new arrays of bytes,
+# they are mutable sequences of integers in the range 0 <= x < 256,
+# defined using the bytearray() constructor.  ([source[,encoding[,errors]]])
+coffe_brands = bytearray(b"Nescafe") 
+
+print(f"Bytearray Coffee Brands: {coffe_brands}")  # Bytearray representing coffee brands
+
+coffe_brands=coffe_brands.replace(b"Nes", b"Star")  # Modifying bytearray content
+print(f"Modified Bytearray Coffee Brands: {coffe_brands}")  # Modified bytearray content
